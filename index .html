@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4 Size Paper with Shadows, Margins, and Header</title>
+    <link rel="stylesheet" href="Resume/style.css">
+</head>
+<body>
+    <div class="paper">
+        <h2>PRAJWAL NARAYAN AWANDKAR</h2>
+        <div class="line"></div>
+        <div class="vartical-line"></div>
+        <div class="content">
+            <section class="information">
+            <h3>CONTACT</h3>
+                <p class="size"><img class="call" src="Resume/smartphone-call_15874.png"> <a href="tel:9112268475">9112268475</a></p>
+                <p class="size"><img class="mail" src="Resume/mail.png"><a href="mailto:Prajwalawandkar2001@gmail.com">Prajwalawandkar2001@gmail.com</a></p>
+                <p class="size"><img class="location" src="Resume/location-pointer.png"> Chandan Nagar near old Saibaba Mandir, Pune</p>
+                <div class="horizontal-line"></div>
+            <h3>SKILLS</h3>
+                <li>Well Versed with MS-office (word,
+                    excel & power point)</li>
+                <li>Front end web development
+                </li>
+                <li>Good written and verbal
+                    communication skills</li>
+                <li>Excellent problem-solving and
+                    analytical skills.
+                    </li>
+                <li>Keen attention to detail.</li>
+                <div class="horizontal-line"></div>
+            <h3>EDUCATION</h3>
+                <p class="schools">High School Education</p>
+                <p class="Schoolname">B.U. English High School,
+                    Akola</p>
+                <p class="marks">66% GPA
+                    Completed in 2018</p>
+                <p class="schools">Higher Secondary Education</p>
+                <p class="Schoolname">Jay Bajarang Vidyalaya Rustamabad, Barshitakli, Akola</p>
+                <p class="marks">67% GPA Completed in 2020</p>
+                <div class="horizontal-line"></div>
+            <h3>LANGUAGES</h3>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>English</th>
+                    <th> <div class="rate">
+                    <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                    </th>
+                  </tr>
+                </thead>
+                <thead>
+                    <tr>
+                      <th>Marathi</th>
+                      <th> <div class="rate">
+                        <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        </th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <th>Hindi</th>
+                      <th> <div class="rate">
+                        <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        </th>
+                    </tr>
+                  </thead>
+            </table>
+              </section> 
+            <section class="OBJECTIVE">
+                <h3>OBJECTIVE</h3>
+                <p class="right-size">To obtain a professional position within a reputed firm to expand my learning,
+                    Knowledge, and skills. To signify my selection in the institution with a willingness to
+                    take- up challenges and responsibilities to work with optimum potential and become
+                    a key member of the group to take my career to an excellent height.</p>
+                    <div class="horizontal-line"></div>
+                <h3>WORK EXPERIENCE</h3>
+                <h4>Reva Tech Software Solution Front end web development (internship).</h4>
+                <h5>Projects</h5>
+                <h5>Traveling</h5>
+                <li><a href="https://prajwalnaw.github.io/College_Project/">Traveling</a></li>
+                <li>This website provides valuable travel information about tourist destinations and
+                    serves as a guide for exploring various countries.</li>
+                <li>It assists you in discovering the finest restaurants and optimal
+                    accommodations for a comfortable stay during your travels.</li>
+                <h5>Stuck overflow Clone</h5>
+                <li><a href="https://stack-overflow-clones.netlify.app/">stack-overflow-clones</a></li>
+                <li>An online platform where developers can ask and answer coding-related
+                    questions.</li>
+                <h5>Personal Strength</h5>
+                <li>Sincere</li>
+                <li>Adjustable.</li> 
+                <li>Fast learner.</li>
+                <li>Passion for constant improvement.</li>
+                <h5>Hobbies</h5>
+                <li>Listening to music.</li>
+                <li>Playing Cricket.</li>
+                <li>Drawing.</li>
+                <li>Playing Kabaddi</li>
+                <h5>Declaration</h5>
+                <p class="right-size">I hereby mention that all the information presential above is authentic to the
+                    very best of my knowledge.</p>
+            </section>
+            <div class="bottom-line"></div>
+            <!-- Content for the left side -->
+            <!-- Additional content can be added below the horizontal line -->
+        </div>
+        <div id="date-container">
+            <i><p id="date-display"></p></i>
+        </div>
+    </div>
+    <script>
+        function updateDate() {
+            const currentDate = new Date();
+            const day = currentDate.getDate();
+            const month = currentDate.getMonth() + 1; // Months are zero-based
+            const year = currentDate.getFullYear();
+
+            const formattedDate = `${day}/${month}/${year}`;
+
+            document.getElementById('date-display').innerText = formattedDate;
+        }
+
+        // Update date initially and then every second
+        updateDate();
+        setInterval(updateDate, 1000);
+    </script>
+</body>
+</html>
